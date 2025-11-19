@@ -3,74 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Subhadeep Jana</title>
+  <title>Welcome - Subhadeep Jana</title>
 
-  <!-- Bootstrap 5 CSS -->
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
   <style>
-    body { margin: 20px; }
-    .resume-container {
-      max-width: 900px;
-      margin: auto;
+    body {
+      margin: 20px;
       font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f8f9fa;
     }
-    @media print {
-      .no-print {
-        display: none !important;
-      }
-      body {
-        margin: 0;
-      }
+    .container-box {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
-  <div class="resume-container">
-    <!-- Top buttons -->
-    <div class="no-print mb-3 d-flex justify-content-between align-items-center">
-      <h4 class="m-0">Resume - Subhadeep Jana</h4>
-      <div>
-        <button class="btn btn-primary btn-sm me-2" onclick="window.print()">
-          <i class="bi bi-printer"></i> Print Resume
-        </button>
-        <a href="cover-letter.html" target="_blank" class="btn btn-outline-secondary btn-sm">
-          <i class="bi bi-file-earmark-text"></i> Open Cover Letter
-        </a>
-      </div>
-    </div>
 
-    <!-- Resume content area -->
-    <!-- Option 1: Embed your PDF resume -->
-    <div id="resume">
-      <h5 class="fw-bold">Subhadeep Jana</h5>
-      <p>
-        Tamluk, Purba Medinipur, West Bengal<br>
-        <i class="bi bi-telephone"></i> <a href="tel:+91-8343902741">+91-8343902741</a> |
-        <i class="bi bi-envelope"></i> <a href="mailto:self.subhadeepjana@gmail.com">self.subhadeepjana@gmail.com</a><br>
-        <i class="bi bi-github"></i> <a href="https://github.com/subhadeepjanaaa">GitHub</a> |
-        <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/subhadeep-jana-cse/">LinkedIn</a>
-      </p>
+  <div class="container-box">
+    <h3 class="mb-4">Welcome to My Portfolio</h3>
 
-      <!-- You can replace this section with full HTML resume later.
-           For now, you can embed your PDF if you want: -->
-
-      <!-- If you have your PDF in the repo as Subhadeep-Jana-Resume.pdf, uncomment this:
-      <iframe src="Subhadeep-Jana-Resume.pdf" class="w-100" style="height: 900px; border: 1px solid #ddd;"></iframe>
-      -->
-
-      <hr>
-
-      <p><strong>Objective:</strong> Aspiring Software Engineer with strong interest in Web Development (HTML, CSS, PHP, MySQL, Bootstrap 5) seeking internship / entry-level opportunities.</p>
-
-      <!-- Add your education, skills etc. here as HTML if you don't want to embed the PDF -->
+    <div class="d-grid gap-2">
+      <a href="resume-page.html" class="btn btn-primary">
+        <i class="bi bi-file-earmark-person"></i> Open Resume
+      </a>
+      <a href="cover-letter.html" class="btn btn-secondary">
+        <i class="bi bi-file-earmark-text"></i> Open Cover Letter
+      </a>
     </div>
   </div>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
